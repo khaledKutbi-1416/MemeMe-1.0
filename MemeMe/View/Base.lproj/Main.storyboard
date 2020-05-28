@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5ch-Z0-21N">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MemeMe-->
+        <scene sceneID="Qgh-cC-QwY">
+            <objects>
+                <viewController id="XGj-fR-h4f" customClass="ViewController" customModule="MemeMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rxD-4v-bHq" customClass="BackGRaoundAppViewColor" customModule="MemeMe" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ahl-Ih-THa" customClass="imageView" customModule="MemeMe" customModuleProvider="target">
+                                <rect key="frame" x="16" y="58" width="288" height="364"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sbv-oe-OcR" customClass="PhotoTextFields" customModule="MemeMe" customModuleProvider="target">
+                                <rect key="frame" x="36" y="79.5" width="248" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2eM-h9-2in"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XHX-Y6-dSp" customClass="PhotoTextFields" customModule="MemeMe" customModuleProvider="target">
+                                <rect key="frame" x="36" y="359.5" width="248" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Lby-s0-iVY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ahl-Ih-THa" firstAttribute="centerX" secondItem="rxD-4v-bHq" secondAttribute="centerX" id="5gv-o6-QTs"/>
+                            <constraint firstItem="ahl-Ih-THa" firstAttribute="leading" secondItem="VBd-Zv-ZWi" secondAttribute="leading" constant="16" id="9ir-wp-U9J"/>
+                            <constraint firstItem="XHX-Y6-dSp" firstAttribute="leading" secondItem="ahl-Ih-THa" secondAttribute="leading" constant="20" id="IJG-Cv-qTY"/>
+                            <constraint firstItem="XHX-Y6-dSp" firstAttribute="trailing" secondItem="ahl-Ih-THa" secondAttribute="trailing" constant="-20" id="LUn-q9-o3L"/>
+                            <constraint firstItem="ahl-Ih-THa" firstAttribute="centerY" secondItem="rxD-4v-bHq" secondAttribute="centerY" id="Qjw-qa-EYa"/>
+                            <constraint firstItem="VBd-Zv-ZWi" firstAttribute="trailing" secondItem="ahl-Ih-THa" secondAttribute="trailing" constant="16" id="XTd-Go-RzP"/>
+                            <constraint firstItem="VBd-Zv-ZWi" firstAttribute="bottom" secondItem="ahl-Ih-THa" secondAttribute="bottom" constant="9" id="YTc-qD-fZ3"/>
+                            <constraint firstItem="Sbv-oe-OcR" firstAttribute="trailing" secondItem="ahl-Ih-THa" secondAttribute="trailing" constant="-20" id="bOX-xK-eMU"/>
+                            <constraint firstItem="XHX-Y6-dSp" firstAttribute="top" secondItem="ahl-Ih-THa" secondAttribute="bottom" constant="-62.5" id="fc2-eT-YPF"/>
+                            <constraint firstItem="Sbv-oe-OcR" firstAttribute="leading" secondItem="ahl-Ih-THa" secondAttribute="leading" constant="20" id="pic-YN-WEu"/>
+                            <constraint firstItem="ahl-Ih-THa" firstAttribute="top" secondItem="Sbv-oe-OcR" secondAttribute="bottom" constant="-61.5" id="tE6-rk-U11"/>
+                            <constraint firstItem="ahl-Ih-THa" firstAttribute="top" secondItem="VBd-Zv-ZWi" secondAttribute="top" constant="14" id="u0m-Xh-9Ps"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VBd-Zv-ZWi"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="X2U-1q-6ma"/>
+                        <barButtonItem title="Item" image="camera" catalog="system" id="FmT-zv-bge">
+                            <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="barItems:" destination="XGj-fR-h4f" id="wSg-Hc-8DA"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="8DX-SV-47b"/>
+                        <barButtonItem tag="1" title="Item" image="photo" catalog="system" width="42" id="suV-uv-PZt">
+                            <inset key="landscapeImageInsets" minX="0.0" minY="6" maxX="0.0" maxY="0.0"/>
+                            <inset key="largeContentSizeImageInsets" minX="0.0" minY="1" maxX="0.0" maxY="0.0"/>
+                            <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="barItems:" destination="XGj-fR-h4f" id="kke-KK-p9S"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="XsV-2t-Lrt"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="MemeMe" id="V1i-OG-CTg">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="square.and.arrow.up" catalog="system" id="pj9-Ah-Iu3">
+                            <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="shareAction:" destination="XGj-fR-h4f" id="Ckb-0m-Fwa"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="efm-xB-RPm">
+                            <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="cancelEditeAction:" destination="XGj-fR-h4f" id="C5n-Jf-tqm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="bottomTextField" destination="XHX-Y6-dSp" id="RA0-G3-k3T"/>
+                        <outlet property="cameraButton" destination="FmT-zv-bge" id="4cG-Lx-p1f"/>
+                        <outlet property="imageView" destination="ahl-Ih-THa" id="WPX-e4-q33"/>
+                        <outlet property="shareButton" destination="pj9-Ah-Iu3" id="x2c-cd-zKA"/>
+                        <outlet property="topTextField" destination="Sbv-oe-OcR" id="6n7-14-tqb"/>
+                        <outlet property="userEditButton" destination="efm-xB-RPm" id="88p-f6-TWB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9XD-rq-EXh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1946.25" y="108.75"/>
+        </scene>
+        <!--Navigation Mode-->
+        <scene sceneID="9k6-YV-AhG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="5ch-Z0-21N" customClass="navigationMode" customModule="MemeMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4nx-g4-XtX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="8it-1T-0Xr">
+                        <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="XGj-fR-h4f" kind="relationship" relationship="rootViewController" id="gli-eE-sRY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="okZ-hp-ieZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1037.68115942029" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera" catalog="system" width="32" height="32"/>
+        <image name="photo" catalog="system" width="64" height="46"/>
+        <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
+    </resources>
+</document>
